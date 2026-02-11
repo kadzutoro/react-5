@@ -1,0 +1,102 @@
+[
+  {
+    "id": "1",
+    "cardNumber": "4539128475621093",
+    "cardType": "Visa",
+    "cardName": "Main Card",
+    "date": "2026-01-05",
+    "amount": 120.50,
+    "descriptions": "Netflix subscription",
+    "isPaid": true
+  },
+  {
+    "id": "2",
+    "cardNumber": "5283471902645837",
+    "cardType": "MasterCard",
+    "cardName": "Main Card",
+    "date": "2026-01-12",
+    "amount": 45.00,
+    "descriptions": "Spotify subscription",
+    "isPaid": true
+  },
+  {
+    "id": "3",
+    "cardNumber": "4928175639041827",
+    "cardType": "Visa",
+    "cardName": "Work Card",
+    "date": "2026-01-15",
+    "amount": 980.00,
+    "descriptions": "Office supplies",
+    "isPaid": false
+  },
+  {
+    "id": "4",
+    "cardNumber": "5379182645017382",
+    "cardType": "MasterCard",
+    "cardName": "Travel Card",
+    "date": "2026-01-20",
+    "amount": 320.75,
+    "descriptions": "Flight tickets",
+    "isPaid": true
+  },
+  {
+    "id": "5",
+    "cardNumber": "4612093758192645",
+    "cardType": "Visa",
+    "cardName": "Travel Card",
+    "date": "2026-01-22",
+    "amount": 210.40,
+    "descriptions": "Hotel booking",
+    "isPaid": false
+  },
+  {
+    "id": "6",
+    "cardNumber": "5428619037541286",
+    "cardType": "MasterCard",
+    "cardName": "Main Card",
+    "date": "2026-02-01",
+    "amount": 60.00,
+    "descriptions": "Internet bill",
+    "isPaid": true
+  },
+  {
+    "id": "7",
+    "cardNumber": "4782915603748291",
+    "cardType": "Visa",
+    "cardName": "Work Card",
+    "date": "2026-02-03",
+    "amount": 1500.00,
+    "descriptions": "Software license",
+    "isPaid": false
+  },
+  {
+    "id": "8",
+    "cardNumber": "5219047385621904",
+    "cardType": "MasterCard",
+    "cardName": "Main Card",
+    "date": "2026-02-07",
+    "amount": 89.99,
+    "descriptions": "Amazon purchase",
+    "isPaid": true
+  },
+  {
+    "id": "9",
+    "cardNumber": "4973018562047391",
+    "cardType": "Visa",
+    "cardName": "Travel Card",
+    "date": "2026-02-09",
+    "amount": 540.00,
+    "descriptions": "Car rental",
+    "isPaid": false
+  },
+  {
+    "id": "10",
+    "cardNumber": "5391746205839174",
+    "cardType": "MasterCard",
+    "cardName": "Work Card",
+    "date": "2026-02-10",
+    "amount": 75.20,
+    "descriptions": "Team lunch",
+    "isPaid": true
+  }
+]
