@@ -1,14 +1,25 @@
-import { NavLink } from 'react-router-dom'
-import css from './Navigation.module.css'
-import clsx from 'clsx'
+import css from './Navigation.module.css';
+import { NavLink, Link } from 'react-router-dom';
+import clsx from 'clsx';
+import { GiWorld } from "react-icons/gi";
 
-const changeActiveClass = ({ isActive }) => clsx(css.link, isActive && css.isActive)
+
+const buildLinkClass = ({ isActive }) => clsx(css.link, isActive && css.activeLink);
 
 export default function Navigation () {
-  return (
-    <nav className={css.nav}>
-      <NavLink to='/' className={changeActiveClass}>Home</NavLink>
-      <NavLink to='/payments' className={changeActiveClass}>Payments</NavLink>
-    </nav>
-  )
+    return(
+        <header>
+            <div>
+                <Link to="/" className={css.logo}>
+                    <GiWorld size={40} />
+                </Link>
+            </div>
+            <div>
+                <nav>
+                    <NavLink to="/" className={buildLinkClass}>Home</NavLink>
+                    <NavLink to="/movies" className={buildLinkClass}>Movies</NavLink>
+                </nav>
+            </div>
+        </header>
+    )
 }
