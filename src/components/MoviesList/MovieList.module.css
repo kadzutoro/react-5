@@ -1,0 +1,22 @@
+.container {
+  width: 100%;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;                             
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.listItem {
+  width: 100%;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+

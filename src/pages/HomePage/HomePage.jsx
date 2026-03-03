@@ -29,7 +29,7 @@ getData();
 
     return(
         <div>
-            <h2>Check out the newest movie releases toady!</h2>
+            <h2 className={css.tittle}>Check out the newest movie releases toady!</h2>
             {isLoading && <Loader/>}
             <MoviesList movies={movies} />
             <Toaster/>

@@ -36,7 +36,7 @@ export default function MoviesPage () {
 
     return(
         <div>
-            <p>Search film by name</p>
+            <p className={css.title}>Search film by name</p>
             <SearchBox/>
             {movies.length > 0 && <MoviesList movies={filteredMovies} />}
             {query && isLoading && <Loader/>}

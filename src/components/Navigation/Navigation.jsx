@@ -8,14 +8,14 @@ const buildLinkClass = ({ isActive }) => clsx(css.link, isActive && css.activeLi
 
 export default function Navigation () {
     return(
-        <header>
+        <header className={css.header}>
             <div>
                 <Link to="/" className={css.logo}>
                     <GiWorld size={40} />
                 </Link>
             </div>
             <div>
-                <nav>
+                <nav className={css.nav}>
                     <NavLink to="/" className={buildLinkClass}>Home</NavLink>
                     <NavLink to="/movies" className={buildLinkClass}>Movies</NavLink>
                 </nav>

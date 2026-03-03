@@ -29,17 +29,21 @@ export default function MovieCast() {
 
   return (
     <div>
-      <ul>
-        {credits.map(({ id, profile_path, name, character}) => (
-            <li key={id}>
-                <img src={createImgURL(profile_path)} alt={name} />
-                <span>{name}</span>
-                <span>{character}</span>
-            </li>
+      <ul className={css.list}>
+        {credits.map(({ id, name, character, profile_path }) => (
+          <li key={id}>
+            <div className={css.imageContainer}>
+              <img src={createImgURL(profile_path)} alt={name} />
+            </div>
+            <div className={css.actorDesc}>
+              <span className={css.name}>{name}</span>
+              <span className={css.character}>{character}</span>
+            </div>
+          </li>
         ))}
       </ul>
-        {isLoading && <Loader />}
-        <Toaster/>
+      {isLoading && <Loader />}
+      <Toaster />
     </div>
   );
 }

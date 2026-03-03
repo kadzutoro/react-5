@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 
 export default function BackLink ({ to }) {
     return (
-        <div>
-            <Link to={to}>
-            <div>
-                <TbArrowBackUp size={30} />
-            </div>
-            </Link>
-            <span>Go back</span>
+        <div className={css.wrapper}>
+      <Link to={to}>
+        <div className={css.backLink}>
+          <TbArrowBackUp size={32} color="white" />
         </div>
+      </Link>
+      <span>Back</span>
+    </div>
     )
 }

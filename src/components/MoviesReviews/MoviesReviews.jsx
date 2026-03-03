@@ -28,32 +28,40 @@ export default function MoviesReviews() {
   }, [movieId]);
 
   return (
-    <div>
-      {isLoading && <Loader />}
-      <ul>
-        {reviews?.map(
-          ({
-            id,
-            content,
-            author_details: { name, username, avatar_path },
-          }) => (
-            <li key={id}>
-              <div>
-                <div>
-                  <img src={createImgURL(avatar_path)} alt={`${name}avatar`} />
-                  <div>
-                    <span>@{username}</span>
-                  </div>
-                  <p>{content}</p>
-                </div>
-              </div>
-            </li>
-          ),
-        )}
-      </ul>{" "}
-      : (<div>There are no reviews for this movie</div>
-      )
-      <Toaster />
-    </div>
+<div>
+            {isLoading && <Loader/> }
+
+            {reviews.length > 0 ?(
+                <ul className={css.list}>
+                    {reviews?.map(
+                        ({
+                            id,
+                            content,
+                            author_details: { name, username, avatar_path },
+                        }) => (
+                            <li key={id}>
+                                <div className={css.userInfoContainer}>
+                                    <div className={css.userInfo}>
+                                        <img 
+                                        src={createImgURL(avatar_path)}
+                                        alt={`${name}avatar`}
+                                        className={css.avatar}
+                                        />
+                                        <div>
+                                            <span>@{username}</span>
+                                        </div>
+                                        <p className={css.comment}>{content}</p>
+                                    </div>
+                                </div>
+                            </li>
+                        )
+
+                    )}
+                </ul>
+            ) : (
+                <div>There aren&apos;t any reviews yet</div>
+            ) }
+            <Toaster />
+        </div>
   );
 }

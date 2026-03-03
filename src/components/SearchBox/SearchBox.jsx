@@ -14,7 +14,7 @@ export default function SearchBox () {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (!query.trim() === '') {
+        if (!query.trim()) {
             toast.error("Please enter a search query");
             return;
         }
@@ -23,14 +23,14 @@ export default function SearchBox () {
     return (
         <>
         <form onSubmit={handleSubmit}>
-            <label>
-                <span>
-                    <IoSearchOutline/>
-                </span>
-                <input onChange={handleChange}
-                value={query}
-                type="text"
-                placeholder="Search movies"
+            <label className={css.formLabel}>
+                <IoSearchOutline className={css.searchIcon}/>
+                <input 
+                    onChange={handleChange}
+                    value={query}
+                    type="text"
+                    placeholder="Search movies"
+                    className={css.formInput}
                 />
             </label>
         </form>
